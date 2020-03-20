@@ -1,0 +1,25 @@
+name: webview
+description: webview app
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  webview_flutter: ^0.3.19+9
+  cupertino_icons: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+scripts:
+  build: flutter packages pub run build_runner build --delete-conflicting-outputs
+  clean: flutter packages pub run build_ruinner clean        
